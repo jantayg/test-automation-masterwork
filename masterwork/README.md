@@ -1,5 +1,5 @@
 -kiválasztott alkalmazás linkje: http://test-automation-shop1.greenfox.academy
--manuális tesztesetek leírása: https://docs.google.com/spreadsheets/d/1-CDavY7o2cUiBof7qDmHiaEopn0PfpKJfnzpoqQzF3E/edit#gid=0
+-manuális tesztesetek leírása: https://docs.google.com/spreadsheets/d/1-CDavY7o2cUiBof7qDmHiaEopn0PfpKJfnzpoqQzF3E/edit?usp=sharing
 -automata tesztek futtatásának lépései:
 -gradle projektben klónizni a projektet, majd a következő paranccsal:
  ./gradlew clean test 
