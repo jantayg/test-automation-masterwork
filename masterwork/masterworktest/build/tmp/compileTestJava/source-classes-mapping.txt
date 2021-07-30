@@ -1,0 +1,28 @@
+PrivacyStatementTest.java
+ PrivacyStatementTest
+LogoutTest.java
+ LogoutTest
+CheckBoxTest.java
+ CheckBoxTest
+BaseTest.java
+ BaseTest
+ListAccessoriesAtoZTest.java
+ ListAccessoriesAtoZTest
+EmptyTheBasketTest.java
+ EmptyTheBasketTest
+EditUserDataTest.java
+ EditUserDataTest
+SaveUserDataTest.java
+ SaveUserDataTest
+NewAddressTest.java
+ NewAddressTest
+SeeAllProductsTest.java
+ SeeAllProductsTest
+Pages/SignUpPage.java
+ Pages.SignUpPage
+LoginTest.java
+ LoginTest
+SignUpTest.java
+ SignUpTest
+Pages/LoginPage.java
+ Pages.LoginPage
