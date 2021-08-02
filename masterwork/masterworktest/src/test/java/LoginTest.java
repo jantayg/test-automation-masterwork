@@ -8,10 +8,11 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginTest extends BaseTest {
+
   @DisplayName("Successful login test")
   @Description("Successful login test, userdata pulled from 'alreadyregistereduserdata.csv' file")
   @ParameterizedTest
-  @CsvFileSource(resources = "../resources/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
+  @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void logInSuccessfully(ArgumentsAccessor argumentsAccessor) {
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     loginPage.open();

@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignUpTest extends BaseTest {
   @DisplayName("Successful signup from csv file")
-  @Description("Successful signup users from 'correctuserdataforregistration.csv' file")
+  @Description("Successful signup users from 'validuserdataforregistration.csv' file")
   @ParameterizedTest
-  @CsvFileSource(resources = "correctuserdataforregistration.csv", numLinesToSkip = 1, encoding = "utf-8")
+  @CsvFileSource(resources = "validuserdataforregistration.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void signUpSuccessfully(String gender, String firstName, String lastName, String email,
                                  String password, String birthday, boolean offersFromPartners,
                                  boolean customerPrivacy, boolean newsletter, boolean privacy)

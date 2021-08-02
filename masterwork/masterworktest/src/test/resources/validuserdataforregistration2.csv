@@ -1,0 +1,4 @@
+gender,firstname,lastname,email,password,birthdate,offersfrompartners,customerprivacy,newsletter,privacy,address,city,state,postalcode,country
+male,John,Smith,johnsmith7@mail.com,password1,01/21/1976,true,true,false,true,2 First Avenue,Waleska,Georgia,30183,United States
+male,Joe,Turnton,joeturnton7@mail.com,password2,02/12/1980,false,true,true,true,63 Meadow Str.,Port Gibson,Mississippi,39150,United States
+female,Kerry,Brown,kerrxbrown7@email.com,pasword3,03/28/1979,true,true,true,true,123 Sheep Str.,Marathon,Texas,79842,United States

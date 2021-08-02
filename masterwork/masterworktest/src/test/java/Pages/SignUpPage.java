@@ -45,17 +45,27 @@ public class SignUpPage {
   @FindBy(name = "newsletter")
   private WebElement newsletterThick;
 
+  @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[10]/div[1]/span/label/a")
+  private WebElement privacyLink;
+
+  public WebElement getPrivacyLink() {
+    return privacyLink;
+  }
+
   @FindBy(name = "psgdpr")
   private WebElement privacythick;
 
+  public WebElement getPrivacythick() {
+    return privacythick;
+  }
   @FindBy(xpath = "//*[@id=\"customer-form\"]/footer/button")
   private WebElement submitButton;
 
   @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[4]/div[1]/div/ul/li")
-  private WebElement emailErrorMesage;
+  private WebElement emailErrorMessage;
 
   public WebElement getEmailErrorMesage() {
-    return emailErrorMesage;
+    return emailErrorMessage;
   }
 
   public void signUp(String gender, String firstName, String lastName, String email,
