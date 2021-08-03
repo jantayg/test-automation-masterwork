@@ -1,0 +1,2 @@
+gender,firstname,lastname,email,password,birthdate,offersfrompartners,customerprivacy,newsletter,privacy,address,city,state,postalcode,country,modified address
+male,John,Smith,johnsmith5@mail.com,password1,01/21/1976,true,true,false,true,2 First Avenue,Waleska,Georgia,30183,United States,12 First Avenue
