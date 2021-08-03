@@ -52,7 +52,12 @@ public class AddressesPage {
   public WebElement getAddressSuccessfullyUpdatedMessage() {
     return addressSuccessfullyUpdatedMessage;
   }
+
+  @FindBy(xpath = "//address")
+  private WebElement firstAddress;
+
+  public WebElement getFirstAddress() {
+    return firstAddress;
+  }
+
 }
-
-
-//*[@id="content"]/div[3]/a

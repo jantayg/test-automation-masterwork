@@ -32,7 +32,6 @@ public class AddressPage {
   @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/footer/button")
   private WebElement saveButton;
 
-
   public void fillAddressFields(String address, String city, String state, String postalCode,
                                 String country)
       throws InterruptedException {
