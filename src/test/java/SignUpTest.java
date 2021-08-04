@@ -26,7 +26,7 @@ public class SignUpTest extends BaseTest {
   @DisplayName("Unsuccessful signup with already registered emails")
   @Description("Signup users attempt with not valid, already registered emil addresses from 'alreadyregistereduserdata.csv' file, should receive error mesage: 'The email is already used, please choose another one or sign in'")
   @ParameterizedTest
-  @CsvFileSource(resources = "../resources/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
+  @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void signUpUnSuccessfully(String gender, String firstName, String lastName, String email,
                                    String password, String birthday, boolean offersFromPartners,
                                    boolean customerPrivacy, boolean newsletter, boolean privacy)

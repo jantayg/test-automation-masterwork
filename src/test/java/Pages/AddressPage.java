@@ -38,11 +38,11 @@ public class AddressPage {
 
     this.address.sendKeys(address);
     this.city.sendKeys(city);
-    Select stateselect = new Select(stateDropdown);
-    stateselect.selectByVisibleText(state);
+    Select stateSelect = new Select(stateDropdown);
+    stateSelect.selectByVisibleText(state);
     this.postcode.sendKeys(postalCode);
-    Select countryselect = new Select(countryDropdown);
-    countryselect.selectByVisibleText(country);
+    Select countrySelect = new Select(countryDropdown);
+    countrySelect.selectByVisibleText(country);
     this.saveButton.click();
   }
 

@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
   @DisplayName("Unsussessful login test")
   @Description("Unsuccessfull login test, userdata pulled from 'alreadyregistereduserdata.csv' file, an extra q character added to the passwords to make them invalid")
   @ParameterizedTest
-  @CsvFileSource(resources = "../resources/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
+  @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void logInUnSuccessfully(ArgumentsAccessor argumentsAccessor) {
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     loginPage.open();

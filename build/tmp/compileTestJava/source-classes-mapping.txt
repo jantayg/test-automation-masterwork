@@ -1,34 +1,34 @@
-SeeAllProductsTest.java
- SeeAllProductsTest
-PrivacyStatementTest.java
- PrivacyStatementTest
-LogoutTest.java
- LogoutTest
-CheckBoxTest.java
- CheckBoxTest
-Pages/LoginPage.java
- Pages.LoginPage
-Pages/SignUpPage.java
- Pages.SignUpPage
-ListAccessoriesAtoZTest.java
- ListAccessoriesAtoZTest
-LoginTest.java
- LoginTest
-SignUpTest.java
- SignUpTest
-Pages/YourAccountPage.java
- Pages.YourAccountPage
-BaseTest.java
- BaseTest
 Pages/AddressesPage.java
  Pages.AddressesPage
 DeleteAddressTest.java
  DeleteAddressTest
-NewAddressTest.java
- NewAddressTest
-EditUserDataTest.java
- EditUserDataTest
+PrivacyStatementTest.java
+ PrivacyStatementTest
+LogoutTest.java
+ LogoutTest
+Pages/LoginPage.java
+ Pages.LoginPage
+Pages/SignUpPage.java
+ Pages.SignUpPage
 Pages/AddressPage.java
  Pages.AddressPage
+ListAccessoriesAtoZTest.java
+ ListAccessoriesAtoZTest
+SignUpTest.java
+ SignUpTest
+Pages/YourAccountPage.java
+ Pages.YourAccountPage
+NewAddressTest.java
+ NewAddressTest
+BaseTest.java
+ BaseTest
+EditUserDataTest.java
+ EditUserDataTest
+SeeAllProductsTest.java
+ SeeAllProductsTest
+Pages/PrestaShop.java
+ Pages.PrestaShop
+LoginTest.java
+ LoginTest
 SaveUserDataTest.java
  SaveUserDataTest
