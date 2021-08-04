@@ -22,13 +22,13 @@ BaseTest.java
  BaseTest
 Pages/AddressesPage.java
  Pages.AddressesPage
-SaveUserDataTest.java
- SaveUserDataTest
+DeleteAddressTest.java
+ DeleteAddressTest
 NewAddressTest.java
  NewAddressTest
 EditUserDataTest.java
  EditUserDataTest
 Pages/AddressPage.java
  Pages.AddressPage
-DeleteAddressTest.java
- DeleteAddressTest
+SaveUserDataTest.java
+ SaveUserDataTest
