@@ -18,7 +18,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SaveUserDataTest extends BaseTest {
   @DisplayName("Saves users first address")
-  @Description("Successfully saves users first address to a file")
+  @Description("Successfully saves users first address to a file named by username")
   @ParameterizedTest
   @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void saveUsersFirstAddressIntoFile(ArgumentsAccessor argumentsAccessor)
@@ -26,9 +26,13 @@ public class SaveUserDataTest extends BaseTest {
     String registeredAddress = "";
     registeredAddress += argumentsAccessor.getString(1) + " ";
     registeredAddress += argumentsAccessor.getString(2) + "\n";
-    for (int i = 10; i < 15; i++) {
-      registeredAddress += argumentsAccessor.getString(i) + "\n";
-    }
+    registeredAddress += argumentsAccessor.getString(15) + "\n";
+    registeredAddress += argumentsAccessor.getString(11) + ", ";
+    registeredAddress += argumentsAccessor.getString(12) + " ";
+    registeredAddress += argumentsAccessor.getString(13) + "\n";
+    registeredAddress += argumentsAccessor.getString(14);
+    List<String> registeredAddressList = new ArrayList<>();
+    registeredAddressList.add(registeredAddress);
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     loginPage.open();
     loginPage.logIn(argumentsAccessor.getString(3),
@@ -43,6 +47,6 @@ public class SaveUserDataTest extends BaseTest {
     Path filePath = Paths.get("src/test/resources/address_" + argumentsAccessor.getString(1)
         + argumentsAccessor.getString(2) + ".txt");
     Files.write(filePath, address);
-    Assertions.assertThat(address.toString()).isEqualTo(registeredAddress);
+    Assertions.assertThat(address).isEqualTo(registeredAddressList);
   }
 }

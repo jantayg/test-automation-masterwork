@@ -1,7 +1,7 @@
 Pages/AddressesPage.java
  Pages.AddressesPage
-DeleteAddressTest.java
- DeleteAddressTest
+Pages/PrestaShop.java
+ Pages.PrestaShop
 PrivacyStatementTest.java
  PrivacyStatementTest
 LogoutTest.java
@@ -10,25 +10,25 @@ Pages/LoginPage.java
  Pages.LoginPage
 Pages/SignUpPage.java
  Pages.SignUpPage
-Pages/AddressPage.java
- Pages.AddressPage
 ListAccessoriesAtoZTest.java
  ListAccessoriesAtoZTest
-SignUpTest.java
- SignUpTest
-Pages/YourAccountPage.java
- Pages.YourAccountPage
-NewAddressTest.java
- NewAddressTest
-BaseTest.java
- BaseTest
-EditUserDataTest.java
- EditUserDataTest
-SeeAllProductsTest.java
- SeeAllProductsTest
-Pages/PrestaShop.java
- Pages.PrestaShop
 LoginTest.java
  LoginTest
 SaveUserDataTest.java
  SaveUserDataTest
+Pages/YourAccountPage.java
+ Pages.YourAccountPage
+NewAddressTest.java
+ NewAddressTest
+SeeAllProductsTest.java
+ SeeAllProductsTest
+EditUserDataTest.java
+ EditUserDataTest
+SignUpTest.java
+ SignUpTest
+Pages/AddressPage.java
+ Pages.AddressPage
+BaseTest.java
+ BaseTest
+DeleteAddressTest.java
+ DeleteAddressTest
