@@ -1,5 +1,6 @@
 import Pages.LoginPage;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginTest extends BaseTest {
 
   @DisplayName("Successful login test")
+  @Feature("Login")
   @Description("Successful login test, userdata pulled from 'alreadyregistereduserdata.csv' file")
   @ParameterizedTest
   @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
@@ -21,6 +23,7 @@ public class LoginTest extends BaseTest {
   }
 
   @DisplayName("Unsussessful login test")
+  @Feature("Login")
   @Description("Unsuccessfull login test, userdata pulled from 'alreadyregistereduserdata.csv' file, an extra q character added to the passwords to make them invalid")
   @ParameterizedTest
   @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
@@ -31,5 +34,4 @@ public class LoginTest extends BaseTest {
     Assertions.assertThat(loginPage.getAuthenticationErrorMessage().getText())
         .isEqualTo("Authentication failed.");
   }
-
 }

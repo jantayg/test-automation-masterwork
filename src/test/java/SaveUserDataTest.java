@@ -22,11 +22,12 @@ public class SaveUserDataTest extends BaseTest {
   @ParameterizedTest
   @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
   public void saveUsersFirstAddressIntoFile(ArgumentsAccessor argumentsAccessor)
-      throws IOException {
+      throws IOException, InterruptedException {
+
     String registeredAddress = "";
     registeredAddress += argumentsAccessor.getString(1) + " ";
     registeredAddress += argumentsAccessor.getString(2) + "\n";
-    registeredAddress += argumentsAccessor.getString(15) + "\n";
+    registeredAddress += argumentsAccessor.getString(10) + "\n";
     registeredAddress += argumentsAccessor.getString(11) + ", ";
     registeredAddress += argumentsAccessor.getString(12) + " ";
     registeredAddress += argumentsAccessor.getString(13) + "\n";
@@ -42,6 +43,17 @@ public class SaveUserDataTest extends BaseTest {
     yourAccountPage.getAddressButton().click();
 
     AddressesPage addressesPage = PageFactory.initElements(driver, AddressesPage.class);
+    if (driver.getTitle().equals("Addresses")) {
+      addressesPage.getAddNewAddressButton().click();
+    }
+
+    AddressPage addressPage = PageFactory.initElements(driver, AddressPage.class);
+    addressPage.fillAddressFields(argumentsAccessor.getString(10),
+        argumentsAccessor.getString(11),
+        argumentsAccessor.getString(12),
+        argumentsAccessor.getString(13),
+        argumentsAccessor.getString(14));
+
     List<String> address = new ArrayList<>();
     address.add(addressesPage.getFirstAddress().getText());
     Path filePath = Paths.get("src/test/resources/address_" + argumentsAccessor.getString(1)

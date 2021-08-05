@@ -1,5 +1,6 @@
 import Pages.SignUpPage;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignUpTest extends BaseTest {
   @DisplayName("Successful signup from csv file")
+  @Feature("Sign up")
   @Description("Successful signup users from 'validuserdataforregistration.csv' file")
   @ParameterizedTest
   @CsvFileSource(resources = "validuserdataforregistration.csv", numLinesToSkip = 1, encoding = "utf-8")
@@ -24,6 +26,7 @@ public class SignUpTest extends BaseTest {
   }
 
   @DisplayName("Unsuccessful signup with already registered emails")
+  @Feature("Sign up")
   @Description("Signup users attempt with not valid, already registered emil addresses from 'alreadyregistereduserdata.csv' file, should receive error mesage: 'The email is already used, please choose another one or sign in'")
   @ParameterizedTest
   @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")

@@ -14,50 +14,49 @@ public class AddressesPage {
   @FindBy(xpath = "//section[@id=\"content\"]/div/a")
   private WebElement addNewAddressButton;
 
-  public WebElement getAddNewAddressButton() {
-    return addNewAddressButton;
-  }
-
   @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
   private WebElement addressSuccessfullyAddedMessage;
-
-  public WebElement getAddressSuccessfullyAddedMessage() {
-    return addressSuccessfullyAddedMessage;
-  }
 
   @FindBy(xpath = "//section[@id=\"content\"]/div[1]/article/div[@class=\"address-footer\"]/a[2]")
   private WebElement deleteAddressButton;
 
-  public WebElement getDeleteAddressButton() {
-    return deleteAddressButton;
-  }
-
   @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
   private WebElement adressSuccessfullyDeletedMessage;
+
+  @FindBy(xpath = "//section[@id=\"content\"]/div[1]/article/div[@class=\"address-footer\"]/a[1]")
+  private WebElement editAddressButton;
+
+  @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
+  private WebElement addressSuccessfullyUpdatedMessage;
+
+  @FindBy(xpath = "//address")
+  private WebElement firstAddress;
 
   public WebElement getAdressSuccessfullyDeletedMessage() {
     return adressSuccessfullyDeletedMessage;
   }
-  //*[@id="address-497"]/div[2]/a[1]
-  @FindBy(xpath = "//section[@id=\"content\"]/div[1]/article/div[@class=\"address-footer\"]/a[1]")
-  private WebElement editAddressButton;
 
   public WebElement getEditAddressButton() {
     return editAddressButton;
   }
 
-  @FindBy(xpath = "//*[@id=\"notifications\"]/div/article/ul/li")
-  private WebElement addressSuccessfullyUpdatedMessage;
+  public WebElement getDeleteAddressButton() {
+    return deleteAddressButton;
+  }
+
+  public WebElement getAddNewAddressButton() {
+    return addNewAddressButton;
+  }
+
+  public WebElement getAddressSuccessfullyAddedMessage() {
+    return addressSuccessfullyAddedMessage;
+  }
 
   public WebElement getAddressSuccessfullyUpdatedMessage() {
     return addressSuccessfullyUpdatedMessage;
   }
 
-  @FindBy(xpath = "//address")
-  private WebElement firstAddress;
-
   public WebElement getFirstAddress() {
     return firstAddress;
   }
-
 }

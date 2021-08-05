@@ -11,10 +11,6 @@ public class SignUpPage {
     this.driver = driver;
   }
 
-  public void open() {
-    driver.get("http://test-automation-shop1.greenfox.academy/login?create_account=1");
-  }
-
   @FindBy(xpath = "//*[@id='customer-form']/section/div[1]/div[1]/label[1]/span/input")
   private WebElement chooseMale;
 
@@ -48,30 +44,34 @@ public class SignUpPage {
   @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[10]/div[1]/span/label/a")
   private WebElement privacyLink;
 
-  public WebElement getPrivacyLink() {
-    return privacyLink;
-  }
-
   @FindBy(name = "psgdpr")
   private WebElement privacythick;
 
-  public WebElement getPrivacythick() {
-    return privacythick;
-  }
   @FindBy(xpath = "//*[@id=\"customer-form\"]/footer/button")
   private WebElement submitButton;
 
   @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[4]/div[1]/div/ul/li")
   private WebElement emailErrorMessage;
 
+  public WebElement getPrivacyLink() {
+    return privacyLink;
+  }
+
   public WebElement getEmailErrorMesage() {
     return emailErrorMessage;
   }
 
+  public WebElement getPrivacythick() {
+    return privacythick;
+  }
+
+  public void open() {
+    driver.get("http://test-automation-shop1.greenfox.academy/login?create_account=1");
+  }
+
   public void signUp(String gender, String firstName, String lastName, String email,
                      String password, String birthday, boolean offersFromPartners,
-                     boolean customerPrivacy, boolean newsletter, boolean privacy)
-      throws InterruptedException {
+                     boolean customerPrivacy, boolean newsletter, boolean privacy) {
     if (gender.equals("male")) {
       this.chooseMale.click();
     } else {

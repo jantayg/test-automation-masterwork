@@ -21,10 +21,8 @@ public class AddressPage {
   @FindBy(name = "postcode")
   private WebElement postcode;
 
-
   @FindBy(name = "id_state")
   private WebElement stateDropdown;
-
 
   @FindBy(name = "id_country")
   private WebElement countryDropdown;
@@ -33,8 +31,7 @@ public class AddressPage {
   private WebElement saveButton;
 
   public void fillAddressFields(String address, String city, String state, String postalCode,
-                                String country)
-      throws InterruptedException {
+                                String country) {
 
     this.address.sendKeys(address);
     this.city.sendKeys(city);
