@@ -6,6 +6,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.aggregator.ArgumentsAccessor;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -14,14 +15,12 @@ import org.openqa.selenium.support.PageFactory;
 public class NewAddressTest extends BaseTest {
   @DisplayName("Successfully add a new address")
   @Feature("Add new address")
-  @Description("Successfully add a new address to the account , userdata pulled from 'alreadyregistereduserdata.csv' file")
-  @ParameterizedTest
-  @CsvFileSource(resources = "/alreadyregistereduserdata.csv", numLinesToSkip = 1, encoding = "utf-8")
-  public void logInSuccessfully(ArgumentsAccessor argumentsAccessor) throws InterruptedException {
+  @Description("Successfully add a new address to the account")
+  @Test
+  public void logInSuccessfully() throws InterruptedException {
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     loginPage.open();
-    loginPage.logIn(argumentsAccessor.getString(3),
-        argumentsAccessor.getString(4));
+    loginPage.logIn("tesztzoltan@test.com", "password");
 
     YourAccountPage yourAccountPage = PageFactory.initElements(driver, YourAccountPage.class);
     yourAccountPage.getAddressButton().click();
@@ -32,11 +31,7 @@ public class NewAddressTest extends BaseTest {
     }
 
     AddressPage addressPage = PageFactory.initElements(driver, AddressPage.class);
-    addressPage.fillAddressFields(argumentsAccessor.getString(10),
-        argumentsAccessor.getString(11),
-        argumentsAccessor.getString(12),
-        argumentsAccessor.getString(13),
-        argumentsAccessor.getString(14));
+    addressPage.fillAddressFields("123 Sheep Str.", "Marathon", "Texas", "79842", "United States");
     Assertions.assertThat(addressesPage.getAddressSuccessfullyAddedMessage().getText())
         .isEqualTo("Address successfully added!");
   }

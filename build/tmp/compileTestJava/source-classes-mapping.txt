@@ -18,8 +18,8 @@ SaveUserDataTest.java
  SaveUserDataTest
 Pages/YourAccountPage.java
  Pages.YourAccountPage
-NewAddressTest.java
- NewAddressTest
+ListAccessoriesAtoZTest.java
+ ListAccessoriesAtoZTest
 BaseTest.java
  BaseTest
 EditUserDataTest.java
@@ -28,7 +28,9 @@ SignUpTest.java
  SignUpTest
 Pages/PrestaShop.java
  Pages.PrestaShop
+NewAddressMultipleTest.java
+ NewAddressMultipleTest
 SeeAllProductsTest.java
  SeeAllProductsTest
-ListAccessoriesAtoZTest.java
- ListAccessoriesAtoZTest
+NewAddressTest.java
+ NewAddressTest
