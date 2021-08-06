@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-03T11:17:22" hostname="Gusztavs-iMac.local" time="5.947">
+<testsuite name="LoginTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-08-05T12:26:34" hostname="Gusztavs-iMac.local" time="25.414">
   <properties/>
-  <testcase name="[1] male, John, Smith, johnsmith5@mail.com, password1, 01/21/1976, true, true, false, true, 2 First Avenue, Waleska, Georgia, 30183, United States, 12 First Avenue" classname="LoginTest" time="5.947"/>
+  <testcase name="[1] male, John, Smith, johnsmith5@mail.com, password1, 01/21/1976, true, true, false, true, 2 First Avenue, Waleska, Georgia, 30183, United States, 12 First Avenue" classname="LoginTest" time="4.199"/>
+  <testcase name="[2] male, Joe, Turnton, joeturnton5@mail.com, password2, 02/12/1980, false, true, true, true, 63 Meadow Str., Port Gibson, Mississippi, 39150, United States, 89 Meadow Str." classname="LoginTest" time="3.621"/>
+  <testcase name="[3] female, Kerry, Brown, kerrxbrown5@email.com, pasword3, 03/28/1979, true, true, true, true, 123 Sheep Str., Marathon, Texas, 79842, United States, 129 Sheep Str." classname="LoginTest" time="3.564"/>
+  <testcase name="[1] male, John, Smith, johnsmith5@mail.com, password1, 01/21/1976, true, true, false, true, 2 First Avenue, Waleska, Georgia, 30183, United States, 12 First Avenue" classname="LoginTest" time="3.796"/>
+  <testcase name="[2] male, Joe, Turnton, joeturnton5@mail.com, password2, 02/12/1980, false, true, true, true, 63 Meadow Str., Port Gibson, Mississippi, 39150, United States, 89 Meadow Str." classname="LoginTest" time="5.643"/>
+  <testcase name="[3] female, Kerry, Brown, kerrxbrown5@email.com, pasword3, 03/28/1979, true, true, true, true, 123 Sheep Str., Marathon, Texas, 79842, United States, 129 Sheep Str." classname="LoginTest" time="4.563"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 1203
+  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 35947
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 03, 2021 1:17:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 05, 2021 2:26:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 36967
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 05, 2021 2:26:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 24781
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 05, 2021 2:26:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 5303
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 05, 2021 2:26:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 29661
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 05, 2021 2:26:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 8534
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 05, 2021 2:26:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
